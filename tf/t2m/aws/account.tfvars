@@ -1,0 +1,5 @@
+tfstate_global_bucket = "terraform-state-arwin-test"
+tfstate_global_bucket_region = "us-west-2"
+aws_profile = "sbx-test"
+aws_role_arn = "arn:aws:iam::515528212812:role/NEOAdmin"
+env = "dev"
