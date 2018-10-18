@@ -4,7 +4,7 @@ terragrunt = {
     config {
       encrypt        = true
       bucket         = "terraform-state-arwin-test"
-      key            = "${path_relative_to_include()}/../terraform.tfstate"
+      key            = "${path_relative_to_include()}/../../terraform.tfstate"
       region         = "us-west-2"
       dynamodb_table = "terraform-locks"
       role_arn       = "arn:aws:iam::515528212812:role/NEOAdmin"
