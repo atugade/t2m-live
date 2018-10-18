@@ -1,7 +1,7 @@
 terragrunt = {
 
   terraform {
-    source = "git::ssh://git@github.com:atugade/t2m-modules.git/aws/s3"
+    source = "git@github.com:atugade/t2m-modules.git//aws/s3"
   }
 
   # Include all settings from the root terraform.tfvars file
@@ -12,4 +12,5 @@ terragrunt = {
 }
 
 bucket = "arwin-terraform-us-west-2"
-role = "droppoint"
+role = "droppointtest"
+customer = "blah"
