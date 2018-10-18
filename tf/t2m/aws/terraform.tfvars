@@ -24,7 +24,7 @@ terragrunt = {
 
   after_hook "run_ansible" {
     commands = ["apply"]
-    execute = ["echo", "testing"]
-    run_on_error = true
+    execute = ["touch", "/tmp/testing"]
+    run_on_error = false
   }
 }
