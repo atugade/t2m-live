@@ -1,6 +1,6 @@
 version: 2
 projects:
-- dir: tf/t2m/aws/dev/
+- dir: tf/t2m/aws/
   workflow: terragrunt
 workflows:
   terragrunt:
