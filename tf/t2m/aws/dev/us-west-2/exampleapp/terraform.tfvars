@@ -1,7 +1,7 @@
 terragrunt = {
 
   terraform {
-    source = "git::https://github.com/atugade/t2m-modules/aws/s3"
+    source = "git::https://github.com/atugade/t2m-modules/tree/master/aws/s3"
   }
 
   # Include all settings from the root terraform.tfvars file
