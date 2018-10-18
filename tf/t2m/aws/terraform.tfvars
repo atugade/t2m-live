@@ -21,4 +21,10 @@ terragrunt = {
       ]
     }
   }
+
+  after_hook "run_ansible" {
+    commands = ["apply-all"]
+    execute = ["echo", "testing"]
+    run_on_error = true
+  }
 }
