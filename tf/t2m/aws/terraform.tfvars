@@ -20,11 +20,12 @@ terragrunt = {
         "${get_tfvars_dir()}/${find_in_parent_folders("region.tfvars", "ignore")}",
       ]
     }
+
+    after_hook "run_ansible" {
+      commands = ["apply"]
+      execute = ["touch", "/tmp/testing"]
+      run_on_error = false
+    }
   }
 
-  after_hook "run_ansible" {
-    commands = ["apply"]
-    execute = ["touch", "/tmp/testing"]
-    run_on_error = false
-  }
 }
