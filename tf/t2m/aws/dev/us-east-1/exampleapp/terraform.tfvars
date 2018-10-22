@@ -12,5 +12,5 @@ terragrunt = {
 }
 
 bucket = "arwin-terraform-us-east-1"
-role = "droppointX"
+role = "droppointC"
 customer = "blah"
