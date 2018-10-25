@@ -12,5 +12,9 @@ terragrunt = {
 }
 
 bucket = "arwin-terraform-us-west-2"
+<<<<<<< Updated upstream
 role = "droppointX"
+=======
+role = "droppointYYY"
+>>>>>>> Stashed changes
 customer = "blah"
